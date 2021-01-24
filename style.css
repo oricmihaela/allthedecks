@@ -1,0 +1,274 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #000000;
+    z-index: -1;
+    height: 100%;
+    margin-right: 0%;
+    margin-left: 0%;
+
+}
+.navbox {
+    position: fixed;
+    background-color: #000000;
+    width: 100%;
+    height: 3em;
+    top: 0%;
+    z-index: 3;
+    box-shadow: 0px 15px 12px -15px #111;    
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0.8em 15em;
+    font-family: league;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.navigation a:active {
+    text-decoration: none;
+    color: #404040;
+}
+.navigation a:hover {
+    text-decoration: none;
+    color: #a0a0a0;
+}
+#home{
+    background: url("images/mainBackground.jpg") center no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+#home h1 {
+    color: #ffffff;
+    padding-top: 8em;
+    padding-left: 18em;
+    font-size: 3.3em;
+    font-family: league;
+}
+#home h3 {
+    color: #ffffff;
+    padding-left: 53.6em;
+    font-family: italicni;
+}
+
+#types {
+    background: url("images/typesBackground.jpg") center no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+}
+#types h2 {
+    padding-top: 2em;
+    font-family: league;
+}
+#types .line1 {
+    background-color: #ffffff;
+    height: 0.2em;
+    width: 3em;
+    margin: auto;
+}
+#types h3 {
+    font-family: italicni;
+    padding-top: 2em;
+    font-size: 12pt;
+}
+#types p {
+    font-family: normalni;
+    font-size: 10pt;
+}
+#types .grid-container {
+    display: grid;
+    grid-template-columns: 20em 20em 20em 20em;
+    grid-template-rows: 4em 12em 20em;
+    gap: 2em;
+    justify-content: center;
+}
+#types .grid-container img {
+    width: 20em;
+    height: auto;
+}
+
+#brands {
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 100em;
+}
+#brands h2 {
+    color: #000000;
+    padding-top: 2em;
+    font-family: league;
+}
+#brands .line2 {
+    background-color: #000000;
+    height: 0.2em;
+    width: 3em;
+    margin: auto;
+}
+#brands h3 {
+    color: #707070;
+    font-family: italicni;
+    font-size: 11pt;
+}
+
+
+
+#brands table {
+    border-collapse: collapse;
+    border-spacing: 0em;
+    margin: auto auto;
+    margin-top: 5em;
+    background-color: #000000;
+}
+#brands td {
+    padding: 0em;
+    width: 25em;
+    height: 25em;
+}
+#brands table img {
+    display: block;
+    width: 25em;
+    height: 25em;
+}
+
+.graypattern {
+    background: url("images/historyBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 159em;
+    text-align: center;
+    background-attachment:local;
+}
+
+.graypattern #history .box {
+    background: #f0f0f0;
+    width: 60%;
+    position: absolute;
+    margin: 4em 20em;
+}
+
+.graypattern #history .box h2 {
+    text-align: center;
+    margin-top: 2em;
+    font-family: league;
+}
+.graypattern #history .line3 {
+    background-color: #000000;
+    height: 0.2em;
+    width: 3em;
+    margin: auto;
+}
+.graypattern #history .box p {
+    text-align: center;
+    width: 80%;
+    margin: 3em auto;
+    font-size: 1.2em;
+    font-family: normalni;
+}
+.graypattern .breakimg {
+    background: url("images/breakBackground.jpg");
+    width: 100%;
+    margin-top: 53em;
+    z-index: 1;
+}
+.shadow {
+    position: absolute;
+    transform: translate(0, -51.4em);
+    width: 100%;
+    height: 51.1em;
+    box-shadow: 
+    inset 0px 15px 20px -6px #000,
+    inset 0px -15px 20px -6px #000; 
+    z-index: 2;
+  }
+
+
+#shop img {
+    height: 20em;
+    margin:auto;
+    margin-top: 6em;
+}
+#shop .shopbox {
+    background-color: #f0f0f0;
+    width: 30em;
+    margin: auto;
+    text-align: center;
+}
+#shop .shopbox h2{
+    padding-top: 2em;
+    font-family: league;
+}
+.graypattern #shop .shopbox .line4 {
+    background-color: #000000;
+    height: 0.2em;
+    width: 3em;
+    margin: auto;
+}
+#shop .shopbox ul {
+    padding-bottom: 1.5em;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2em;
+    font-family: normalni;
+}
+#shop .shopbox ul a {
+    color: #606060;
+    text-decoration: none;
+}
+#shop .shopbox ul a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.animate {
+    animation: animate .3s ease-in-out forwards;
+  }
+  
+  @keyframes animate {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+
+#brands td:hover img {
+    opacity: 30%;
+}
+#brands td .content {
+    opacity: 0%;
+    color: #ffffff;
+    z-index: 1;
+    position: absolute;
+    width:20em;
+    text-align: center;
+    margin-left: 2.5em;
+    transform:translate(0%, -250%);
+}
+#brands td:hover .content {
+    opacity: 1;
+}
+@font-face {
+    font-family: league;
+    src:url("fonts/LeagueSpartan-Bold.otf");
+}
+@font-face {
+    font-family: normalni;
+    src:url("fonts/LibreBaskerville-Regular.ttf");
+}
+@font-face {
+    font-family: italicni;
+    src:url("fonts/LibreBaskerville-Italic.ttf");
+}
